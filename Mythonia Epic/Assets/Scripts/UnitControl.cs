@@ -10,7 +10,14 @@ variables and a missing brace I could not find for the life of me.
 this code is a lot more functional and modular. It is stll all placeholder.*/
 
 public class UnitControl : MonoBehaviour {
+
+	private UnitControl[] squadControl;
+
 	//Unit Specific Values
+
+	public bool Champion = false;
+	public bool General = false;
+
 	public int health = 100;
 	public int attackPower = 50;
 	public int attackSpeed = 2;
@@ -29,20 +36,31 @@ public class UnitControl : MonoBehaviour {
 	private Transform selectionMarker;
 	private bool moving = false;
 	private Vector3 targetPoint = Vector3.zero;
+
 	
 	void Start(){
+		squadControl = transform.parent.GetComponentsInChildren<UnitControl>();
 		lastAttack = Time.time;
 		selectionMarker = transform.FindChild("Selection Marker");
 	}
 	
 	void Update(){
-		RaycastHit hit;
+		RaycastHit hit = new RaycastHit();
+		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
 
 		if (health <= 0){
 			Destroy(transform.gameObject);
 		}
 
-		if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity)){
+		if(Physics.Raycast(ray, out hit , Mathf.Infinity)){
+			Debug.DrawRay(Camera.main.transform.position, ray.direction, Color.yellow);
+			if(Input.GetMouseButtonDown(0)){
+				Instantiate(menu, Camera.main.ViewportToScreenPoint(Input.mousePosition), Quaternion.LookRotation(new Vector3(0,0,18)));
+			}
+		}
+
+		if(Physics.Raycast( ray, out hit, Mathf.Infinity)){
 			if(SelectionCheck(hit)){
 				TargetSelection(hit);
 				AttackSelection(hit);
@@ -65,9 +83,14 @@ public class UnitControl : MonoBehaviour {
 	
 	bool SelectionCheck(RaycastHit hit){
 		if(Input.GetMouseButtonDown(1) && selected){
-			selected = false;
+			foreach (UnitControl control in squadControl){
+				control.selected = false;
+			}
 		}if(Input.GetMouseButtonDown(0) && hit.transform == transform && !selected && isFriendly == true){
-			selected = true;
+			//selected = true;
+			foreach (UnitControl control in squadControl){
+				control.selected = true;
+			}
 		}
 		
 		if(selected){
@@ -83,7 +106,8 @@ public class UnitControl : MonoBehaviour {
 		if(Input.GetMouseButtonDown(0) && hit.transform.tag == "Ground"){
 			moving = true;
 			targetPoint = hit.point;
-			Instantiate(menu, hit.point + (hit.normal * 0.01f), Quaternion.LookRotation(hit.normal + new Vector3(-90,0,0)));
+			//Instantiate(menu, hit.point + (hit.normal * 0.01f), Quaternion.LookRotation(hit.normal + new Vector3(-90,0,0)));
+			//Instantiate(menu, , Quaternion.LookRotation(new Vector3(0,0,18)));
 		}
 	}
 
@@ -93,7 +117,7 @@ public class UnitControl : MonoBehaviour {
 			moving = true;
 			attackSelection = hit.transform;
 			targetPoint = hit.transform.position;
-			Instantiate(attackMenu, hit.point + (hit.normal * 0.01f), Quaternion.LookRotation(hit.normal + new Vector3(-90,0,0)));
+			Instantiate(attackMenu, Camera.main.WorldToScreenPoint(hit.point) + (hit.normal * 0.01f), Quaternion.LookRotation(hit.normal + new Vector3(-90,0,0)));
 		}
 	}
 	void ApplyDamage(Transform target, int damage)
