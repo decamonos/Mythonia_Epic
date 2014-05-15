@@ -23,6 +23,11 @@ public class UnitControl : MonoBehaviour {
 	public int attackSpeed = 2;
 	private float lastAttack;
 
+
+	enum status : int { stunned=1, sleep, poisoned, burned };
+
+	public int currentStatus;
+
 	//Combat Values
 	public bool isFriendly = false;
 	private bool attacking = false;
@@ -45,6 +50,11 @@ public class UnitControl : MonoBehaviour {
 	}
 	
 	void Update(){
+
+		if ( currentStatus == (int)status.stunned){
+			transform.renderer.material.color = Color.yellow;
+		}
+
 		RaycastHit hit = new RaycastHit();
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -56,7 +66,7 @@ public class UnitControl : MonoBehaviour {
 		if(Physics.Raycast(ray, out hit , Mathf.Infinity)){
 			Debug.DrawRay(Camera.main.transform.position, ray.direction, Color.yellow);
 			if(Input.GetMouseButtonDown(0)){
-				Instantiate(menu, Camera.main.ViewportToScreenPoint(Input.mousePosition), Quaternion.LookRotation(new Vector3(0,0,18)));
+				Instantiate(menu, hit.point + new Vector3(0, -0.5f, 0) , Quaternion.identity);
 			}
 		}
 
@@ -106,7 +116,7 @@ public class UnitControl : MonoBehaviour {
 		if(Input.GetMouseButtonDown(0) && hit.transform.tag == "Ground"){
 			moving = true;
 			targetPoint = hit.point;
-			//Instantiate(menu, hit.point + (hit.normal * 0.01f), Quaternion.LookRotation(hit.normal + new Vector3(-90,0,0)));
+			Instantiate(menu, hit.point + (hit.normal * 0.01f), Quaternion.LookRotation(hit.normal + new Vector3(-90,0,0)));
 			//Instantiate(menu, , Quaternion.LookRotation(new Vector3(0,0,18)));
 		}
 	}
