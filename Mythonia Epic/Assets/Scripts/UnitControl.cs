@@ -63,12 +63,6 @@ public class UnitControl : MonoBehaviour {
 			Destroy(transform.gameObject);
 		}
 
-		if(Physics.Raycast(ray, out hit , Mathf.Infinity)){
-			Debug.DrawRay(Camera.main.transform.position, ray.direction, Color.yellow);
-			if(Input.GetMouseButtonDown(0)){
-				Instantiate(menu, hit.point + new Vector3(0, -0.5f, 0) , Quaternion.identity);
-			}
-		}
 
 		if(Physics.Raycast( ray, out hit, Mathf.Infinity)){
 			if(SelectionCheck(hit)){
@@ -76,8 +70,6 @@ public class UnitControl : MonoBehaviour {
 				AttackSelection(hit);
 			}
 		}
-		
-		if(Input.GetKeyDown(KeyCode.A)){selected = true;}
 		
 		if(moving){
 			GetComponent<NavMeshAgent>().destination = targetPoint;
@@ -117,7 +109,6 @@ public class UnitControl : MonoBehaviour {
 			moving = true;
 			targetPoint = hit.point;
 			Instantiate(menu, hit.point + (hit.normal * 0.01f), Quaternion.LookRotation(hit.normal + new Vector3(-90,0,0)));
-			//Instantiate(menu, , Quaternion.LookRotation(new Vector3(0,0,18)));
 		}
 	}
 
