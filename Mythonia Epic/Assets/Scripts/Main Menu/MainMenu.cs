@@ -8,7 +8,6 @@ public class MainMenu : MonoBehaviour {
 	
 	private bool isOptions = false;
 
-	private int quality;
 	private bool fullscreen;
 	
 	private Rect[] resolutions = new Rect[10];
@@ -34,8 +33,6 @@ public class MainMenu : MonoBehaviour {
 		resolutions[7] = new Rect(0,0,1600,1200);
 		resolutions[8] = new Rect(0,0,1920,1080);
 		resolutions[9] = new Rect(0,0,1920,1200);
-		
-		quality = QualitySettings.GetQualityLevel();
 		
 		QualitySettings.SetQualityLevel(5);
 	}

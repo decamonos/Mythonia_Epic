@@ -233,11 +233,12 @@
      <Compile Include="Assets\Scripts\AutoDestruct.cs" />
      <Compile Include="Assets\Scripts\AutoFade.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
      <Compile Include="Assets\Scripts\Main Menu\MainMenu.cs" />
      <Compile Include="Assets\Scripts\RotateScript.cs" />
      <Compile Include="Assets\Scripts\SplashScreen.cs" />
+     <Compile Include="Assets\Scripts\SquadController.cs" />
      <Compile Include="Assets\Scripts\UnitControl.cs" />
+     <Compile Include="Assets\Scripts\UnitController.cs" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-24px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Labels\Atlas\Huggable32.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-12px.fnt" />

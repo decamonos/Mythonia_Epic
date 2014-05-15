@@ -33,7 +33,7 @@ public class CameraController : MonoBehaviour {
 	void ClickMovement(){
 		RaycastHit hit;
 		
-		if(Input.GetMouseButtonUp(0) &&  Physics.Raycast(gameCamera.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, layerMask)){
+		if(Input.GetMouseButtonUp(2) &&  Physics.Raycast(gameCamera.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, layerMask)){
 			if(!Physics.Raycast(gameCamera.ScreenPointToRay(Input.mousePosition), Mathf.Infinity, ~layerMask)){
 				desiredPosition = hit.point + offset;
 				distance = Vector3.Distance(gameCamera.transform.position, desiredPosition);
