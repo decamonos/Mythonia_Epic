@@ -11,7 +11,6 @@ public class CameraController : MonoBehaviour {
 	public int groundLayer = 9;
 	
 	private Vector3 desiredPosition;
-	private float distance = 0;
 	private int layerMask;
 	
 
@@ -36,7 +35,6 @@ public class CameraController : MonoBehaviour {
 		if(Input.GetMouseButtonUp(2) &&  Physics.Raycast(gameCamera.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, layerMask)){
 			if(!Physics.Raycast(gameCamera.ScreenPointToRay(Input.mousePosition), Mathf.Infinity, ~layerMask)){
 				desiredPosition = hit.point + offset;
-				distance = Vector3.Distance(gameCamera.transform.position, desiredPosition);
 			}
 		}
 	}

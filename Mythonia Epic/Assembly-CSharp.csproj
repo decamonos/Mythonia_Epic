@@ -230,10 +230,13 @@
      <Compile Include="Assets\Daikon Forge\Daikon Forge\Tweening\Scripts\dfTweenVector2.cs" />
      <Compile Include="Assets\Daikon Forge\Daikon Forge\Tweening\Scripts\dfTweenVector3.cs" />
      <Compile Include="Assets\Daikon Forge\Daikon Forge\Tweening\Scripts\dfTweenVector4.cs" />
+     <Compile Include="Assets\Scripts\Attack.cs" />
      <Compile Include="Assets\Scripts\AutoDestruct.cs" />
      <Compile Include="Assets\Scripts\AutoFade.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Main Menu\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\MeleeAttack.cs" />
+     <Compile Include="Assets\Scripts\RangedAttack.cs" />
      <Compile Include="Assets\Scripts\RotateScript.cs" />
      <Compile Include="Assets\Scripts\SplashScreen.cs" />
      <Compile Include="Assets\Scripts\SquadController.cs" />
