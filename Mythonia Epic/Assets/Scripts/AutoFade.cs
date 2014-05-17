@@ -1,6 +1,4 @@
-﻿// Thanks to the unity forums for this ;) xD
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
  
 public class AutoFade : MonoBehaviour
