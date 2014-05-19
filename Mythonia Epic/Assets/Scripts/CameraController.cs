@@ -42,14 +42,16 @@ public class CameraController : MonoBehaviour {
 	void MouseMovement(){
 		if(Input.mousePosition.x < screenBoundary){desiredPosition.x -= mouseMovementSpeed * Time.deltaTime;}
 		if(Input.mousePosition.x > Screen.width - screenBoundary){desiredPosition.x += mouseMovementSpeed * Time.deltaTime;}
-		if(Input.mousePosition.y < screenBoundary){desiredPosition.z -= mouseMovementSpeed * Time.deltaTime;}
-		if(Input.mousePosition.y > Screen.height - screenBoundary){desiredPosition.z += mouseMovementSpeed * Time.deltaTime;}
+		//Per a conversation with Jo, the camera shouldn't move on the Z Axis
+		//if(Input.mousePosition.y < screenBoundary){desiredPosition.z -= mouseMovementSpeed * Time.deltaTime;}
+		//if(Input.mousePosition.y > Screen.height - screenBoundary){desiredPosition.z += mouseMovementSpeed * Time.deltaTime;}
 	}
 	
 	void KeyboardMovement(){
 		if(Input.GetKey(KeyCode.A)){desiredPosition.x -= keyboardMovementSpeed * Time.deltaTime;}
 		if(Input.GetKey(KeyCode.D)){desiredPosition.x += keyboardMovementSpeed * Time.deltaTime;}
-		if(Input.GetKey(KeyCode.W)){desiredPosition.z += keyboardMovementSpeed * Time.deltaTime;}
-		if(Input.GetKey(KeyCode.S)){desiredPosition.z -= keyboardMovementSpeed * Time.deltaTime;}
+		//Per a conversation with Jo, the camera shouldn't move on the Z Axis
+		//if(Input.GetKey(KeyCode.W)){desiredPosition.z += keyboardMovementSpeed * Time.deltaTime;}
+		//if(Input.GetKey(KeyCode.S)){desiredPosition.z -= keyboardMovementSpeed * Time.deltaTime;}
 	}
 }

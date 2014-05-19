@@ -11,4 +11,9 @@ public class Attack : MonoBehaviour {
 	public virtual void ApplyDamage(Transform target){
 		target.GetComponent<SquadController>().squadHealth -= baseDamage;
 	}
+
+	public Transform Target(){
+
+	}
+
 }
