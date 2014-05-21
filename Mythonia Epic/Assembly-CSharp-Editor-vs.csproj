@@ -154,10 +154,6 @@
  <HintPath>C:\Program Files (x86)\Unity4Pro\Editor\Data\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{E78AC5C0-2259-E29E-D8A5-F2AB1BE58B6D}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	   Other similar extension points exist, see Microsoft.Common.targets.

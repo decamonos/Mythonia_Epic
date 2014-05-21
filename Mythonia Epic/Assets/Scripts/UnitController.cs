@@ -22,4 +22,11 @@ public class UnitController : MonoBehaviour {
 		}
 		
 	}
+
+	public Transform Target(){
+		if(Physics.Raycast(Ray, out hit, Mathf.Infinity)){
+			return hit.transform;
+		}
+		}
+
 }
