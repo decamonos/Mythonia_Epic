@@ -1,14 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MeleeAttack.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SquadController.cs">
     <Files>
-      <File FileName="Assets\Scripts\UnitController.cs" Line="15" Column="2" />
-      <File FileName="Assets\Scripts\Attack.cs" Line="9" Column="29" />
+      <File FileName="Assets\Scripts\SquadController.cs" Line="36" Column="21" />
+      <File FileName="Assets\Scripts\UnitController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Attack.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CameraController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MeleeAttack.cs" Line="16" Column="34" />
-      <File FileName="Assets\Scripts\SquadController.cs" Line="36" Column="4" />
-      <File FileName="Assets\Scripts\RangedAttack.cs" Line="12" Column="18" />
-      <File FileName="Assets\Scripts\UnitControl.cs" Line="49" Column="61" />
+      <File FileName="Assets\Scripts\SquadController.cs" Line="35" Column="46" />
+      <File FileName="Assets\Scripts\RangedAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UnitControl.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

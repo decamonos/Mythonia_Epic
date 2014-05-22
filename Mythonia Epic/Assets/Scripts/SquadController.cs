@@ -26,6 +26,7 @@ public class SquadController : MonoBehaviour {
 	}
 	
 	void Update () {
+
 		Target();
 		if(selected == false && Input.GetMouseButton(0) && Target().parent.FindChild("Squad") == transform){
 			selected = true;
