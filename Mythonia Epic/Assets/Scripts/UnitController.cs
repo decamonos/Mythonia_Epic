@@ -7,7 +7,15 @@ public class UnitController : MonoBehaviour {
 	
 	private Transform unitPosition;
 
+	private Ray ray;
+	private RaycastHit hit;
+	private Camera gameCamera;
+
+	private Transform currentTarget;
+
 	void Start () {
+		gameCamera = Camera.main;
+		ray = gameCamera.ScreenPointToRay(Input.mousePosition);
 		unitPosition = transform.parent.FindChild("Squad").FindChild("Unit Position " + positionInFormation);
 	}
 	
@@ -24,9 +32,11 @@ public class UnitController : MonoBehaviour {
 	}
 
 	public Transform Target(){
-		if(Physics.Raycast(Ray, out hit, Mathf.Infinity)){
+		if(Physics.Raycast(ray, out hit, Mathf.Infinity)){
 			return hit.transform;
 		}
+		// This is an escape to return the current target if no raycast can be found, without this an error occurs.
+		return currentTarget;
 		}
 
 }
