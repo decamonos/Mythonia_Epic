@@ -169,6 +169,15 @@
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-20px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-16px.fnt" />
      <None Include="Assets\6by7\ProBuilder\Editor\Actions\Credits.txt" />
+ <Reference Include="ProBuilderCore">
+ <HintPath>Assets\6by7\ProBuilder\Classes\ProBuilderCore.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderEditor">
+ <HintPath>Assets\6by7\ProBuilder\Editor\ProBuilderEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="SixBySeven">
+ <HintPath>Assets\6by7\Shared\Code\SixBySeven.dll</HintPath>
+ </Reference>
  <Reference Include="dfScriptLite">
  <HintPath>Assets\Daikon Forge\Daikon Forge\DataBinding\Plugins\dfScriptLite.dll</HintPath>
  </Reference>
@@ -189,15 +198,6 @@
  </Reference>
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>C:\Program Files (x86)\Unity4Pro\Editor\Data\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="ProBuilderEditor">
- <HintPath>Assets\6by7\ProBuilder\Editor\ProBuilderEditor.dll</HintPath>
- </Reference>
- <Reference Include="ProBuilderCore">
- <HintPath>Assets\6by7\ProBuilder\Classes\ProBuilderCore.dll</HintPath>
- </Reference>
- <Reference Include="SixBySeven">
- <HintPath>Assets\6by7\Shared\Code\SixBySeven.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

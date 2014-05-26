@@ -283,14 +283,14 @@
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-20px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-16px.fnt" />
      <None Include="Assets\6by7\ProBuilder\Editor\Actions\Credits.txt" />
- <Reference Include="dfScriptLite">
- <HintPath>Assets\Daikon Forge\Daikon Forge\DataBinding\Plugins\dfScriptLite.dll</HintPath>
- </Reference>
  <Reference Include="ProBuilderCore">
  <HintPath>Assets\6by7\ProBuilder\Classes\ProBuilderCore.dll</HintPath>
  </Reference>
  <Reference Include="SixBySeven">
  <HintPath>Assets\6by7\Shared\Code\SixBySeven.dll</HintPath>
+ </Reference>
+ <Reference Include="dfScriptLite">
+ <HintPath>Assets\Daikon Forge\Daikon Forge\DataBinding\Plugins\dfScriptLite.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
