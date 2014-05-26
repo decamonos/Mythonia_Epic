@@ -46,6 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\6by7\ProBuilder\API Examples\Instantiation\ProBuilderInstantiate.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\API Examples\Runtime Editing\Materials\pb_Selection.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Classes\pbVersionBridge.cs" />
+     <Compile Include="Assets\6by7\ProGrids\Classes\pg_Util.cs" />
      <Compile Include="Assets\Daikon Forge\Daikon Forge\DFGUI\Scripts\Controls\dfButton.cs" />
      <Compile Include="Assets\Daikon Forge\Daikon Forge\DFGUI\Scripts\Controls\dfCheckbox.cs" />
      <Compile Include="Assets\Daikon Forge\Daikon Forge\DFGUI\Scripts\Controls\dfControl.cs" />
@@ -245,17 +250,24 @@
      <Compile Include="Assets\Scripts\UnitControl.cs" />
      <Compile Include="Assets\Scripts\UnitController.cs" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-24px.fnt" />
+     <None Include="Assets\6by7\ProBuilder\changelog.txt" />
+     <None Include="Assets\6by7\ProBuilder\Shader\DiffuseVertexColor.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Labels\Atlas\Huggable32.fnt" />
+     <None Include="Assets\6by7\ProBuilder\Shader\DiffuseVertexColorTransparency.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-12px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\DFGUI\Shaders\Default UI Shader.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Shaders\TechBlueShader.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\TechBlue\OpenSans-Semibold-18px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\TechBlue\title-text.fnt" />
+     <None Include="Assets\6by7\ProGrids\VersionInfo.txt" />
+     <None Include="Assets\6by7\ProBuilder\VersionInfo.txt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\TechBlue\OpenSans-SemiBold-56px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\AnimatedSprite\OpenSans-Semibold-18px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Resources\Fonts\SIL Open Font License.txt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Color Picker\Shaders\ColorPickerHue.shader" />
      <None Include="Assets\Necromancer GUI\Kingthings.txt" />
+     <None Include="Assets\6by7\ProBuilder\Shader\UnlitColor.shader" />
+     <None Include="Assets\6by7\ProBuilder\API Examples\Instantiation\README.txt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\DFGUI\Shaders\Dynamic Font Shader.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Color Picker\Shaders\ColoredCharacterShader.shader" />
      <None Include="Assets\Necromancer GUI\Readme.txt" />
@@ -264,12 +276,21 @@
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Shaders\Radar Sweep Shader.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\TechBlue\OpenSans-Semibold-14px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Labels\Atlas\Huggable.fnt" />
+     <None Include="Assets\6by7\ProBuilder\Shader\UnlitColor-Overlay.shader" />
+     <None Include="Assets\6by7\ProBuilder\Shader\DiffuseVertexColorEmission.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Resources\Fonts\OpenSans Font License.txt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\TechBlue\LCD Font.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-20px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-16px.fnt" />
+     <None Include="Assets\6by7\ProBuilder\Editor\Actions\Credits.txt" />
  <Reference Include="dfScriptLite">
  <HintPath>Assets\Daikon Forge\Daikon Forge\DataBinding\Plugins\dfScriptLite.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderCore">
+ <HintPath>Assets\6by7\ProBuilder\Classes\ProBuilderCore.dll</HintPath>
+ </Reference>
+ <Reference Include="SixBySeven">
+ <HintPath>Assets\6by7\Shared\Code\SixBySeven.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

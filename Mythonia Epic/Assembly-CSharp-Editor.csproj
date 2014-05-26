@@ -46,6 +46,33 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\Bridge.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\DetachFace.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\ExplodeFaces.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\ExportObj.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\ExtrudeFace.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\FlipFaces.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\InvertSelection.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\Merge.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\PivotTool.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\ProBuilderizeGameObject.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Actions\StripProBuilderScripts.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\ProBuilderMenuItems.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Repair\CleanUpLeakedMeshes.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Repair\FixGameObjectFlags.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Repair\ForceMeshRefresh.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Repair\RebuildSharedIndices.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Repair\SetProjectionAxis.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Tools\AutoNodraw.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Tools\ProjectNodrawUtil.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\Tools\SelectFacesWithMaterial.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\pb_About.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\pb_Preferences.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Editor\pb_Upgrade_Utility.cs" />
+     <Compile Include="Assets\6by7\ProBuilder\Install\Editor\QuickStart.cs" />
+     <Compile Include="Assets\6by7\ProGrids\Editor\pg_Constant.cs" />
+     <Compile Include="Assets\6by7\ProGrids\Editor\pg_Editor.cs" />
+     <Compile Include="Assets\6by7\ProGrids\Editor\pg_Preferences.cs" />
      <Compile Include="Assets\Daikon Forge\Daikon Forge\DFGUI\Editor\dfAnimationClipInspector.cs" />
      <Compile Include="Assets\Daikon Forge\Daikon Forge\DFGUI\Editor\dfButtonInspector.cs" />
      <Compile Include="Assets\Daikon Forge\Daikon Forge\DFGUI\Editor\dfCheckboxInspector.cs" />
@@ -109,17 +136,24 @@
      <Compile Include="Assets\Daikon Forge\Daikon Forge\Tweening\Editor\TweenVector3Inspector.cs" />
      <Compile Include="Assets\Daikon Forge\Daikon Forge\Tweening\Editor\TweenVector4Inspector.cs" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-24px.fnt" />
+     <None Include="Assets\6by7\ProBuilder\changelog.txt" />
+     <None Include="Assets\6by7\ProBuilder\Shader\DiffuseVertexColor.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Labels\Atlas\Huggable32.fnt" />
+     <None Include="Assets\6by7\ProBuilder\Shader\DiffuseVertexColorTransparency.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-12px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\DFGUI\Shaders\Default UI Shader.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Shaders\TechBlueShader.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\TechBlue\OpenSans-Semibold-18px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\TechBlue\title-text.fnt" />
+     <None Include="Assets\6by7\ProGrids\VersionInfo.txt" />
+     <None Include="Assets\6by7\ProBuilder\VersionInfo.txt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\TechBlue\OpenSans-SemiBold-56px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\AnimatedSprite\OpenSans-Semibold-18px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Resources\Fonts\SIL Open Font License.txt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Color Picker\Shaders\ColorPickerHue.shader" />
      <None Include="Assets\Necromancer GUI\Kingthings.txt" />
+     <None Include="Assets\6by7\ProBuilder\Shader\UnlitColor.shader" />
+     <None Include="Assets\6by7\ProBuilder\API Examples\Instantiation\README.txt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\DFGUI\Shaders\Dynamic Font Shader.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Color Picker\Shaders\ColoredCharacterShader.shader" />
      <None Include="Assets\Necromancer GUI\Readme.txt" />
@@ -128,10 +162,13 @@
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Shaders\Radar Sweep Shader.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\TechBlue\OpenSans-Semibold-14px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Labels\Atlas\Huggable.fnt" />
+     <None Include="Assets\6by7\ProBuilder\Shader\UnlitColor-Overlay.shader" />
+     <None Include="Assets\6by7\ProBuilder\Shader\DiffuseVertexColorEmission.shader" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Resources\Fonts\OpenSans Font License.txt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\TechBlue\LCD Font.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-20px.fnt" />
      <None Include="Assets\Daikon Forge\Daikon Forge\Examples\Skins\Fantasy\Fonts\Open Sans\Heiro-OpenSans-Regular-16px.fnt" />
+     <None Include="Assets\6by7\ProBuilder\Editor\Actions\Credits.txt" />
  <Reference Include="dfScriptLite">
  <HintPath>Assets\Daikon Forge\Daikon Forge\DataBinding\Plugins\dfScriptLite.dll</HintPath>
  </Reference>
@@ -152,6 +189,15 @@
  </Reference>
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>C:\Program Files (x86)\Unity4Pro\Editor\Data\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderEditor">
+ <HintPath>Assets\6by7\ProBuilder\Editor\ProBuilderEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderCore">
+ <HintPath>Assets\6by7\ProBuilder\Classes\ProBuilderCore.dll</HintPath>
+ </Reference>
+ <Reference Include="SixBySeven">
+ <HintPath>Assets\6by7\Shared\Code\SixBySeven.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
