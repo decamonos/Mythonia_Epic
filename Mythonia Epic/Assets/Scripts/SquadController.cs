@@ -17,58 +17,47 @@ public class SquadController : MonoBehaviour {
 	
 	private GameObject menu;
 
-	private Ray ray;
 	private RaycastHit hit;
 	private Transform currentTarget;
 	
-	void Start () {
-
-	}
+	private string raycastHitName = "";
 	
 	void Update () {
-		ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-		if(selected == false && Input.GetMouseButton(0)){
-			if(Physics.Raycast(ray, out hit, Mathf.Infinity)){
-				currentTarget = hit.transform;
-			}
-			if (currentTarget.tag == "Unit"){
-				if (currentTarget.parent.FindChild("Squad") == transform){
-					selected = true;}}
-		}
-		if(selected == true && Input.GetMouseButton(1)){
-			if(Physics.Raycast(ray, out hit, Mathf.Infinity)){
-				currentTarget = hit.transform;
-			}
-			if (currentTarget.tag == "Unit"){
-				if (currentTarget.parent.FindChild("Squad") == transform){
-					selected = false;}}
+		Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity);
+		
+		if(hit.transform != null){
+			raycastHitName = hit.transform.name;
+		}else{
+			raycastHitName = "None";
 		}
 		
-		if(menu != null && Input.GetMouseButtonUp(0)){
+		if(Input.GetMouseButtonDown(0) && hit.transform != null){
+			if(!selected && hit.transform.tag == "Unit" && hit.transform.parent.FindChild("Squad") == transform){
+				selected = true;
+			}else if(selected){
+				if(hit.transform.tag == "Ground"){
+					menu = Instantiate(menuPrefab, hit.point + (hit.normal * 0.01f), Quaternion.LookRotation(hit.normal + new Vector3(-90,0,0))) as GameObject;
+				}else if(hit.transform.tag == "Unit" && hit.transform.parent.FindChild("Squad") != transform){
+					selected = false;
+				}
+			}
+		}
+		
+		if(Input.GetMouseButtonUp(0)){
+			if(selected && hit.transform.name == "menu_move"){
+				transform.position = hit.point + new Vector3(0, 0.1f, 0);
+			}
+			
 			Destroy(menu);
 		}
-	
-		//if(Input.GetMouseButtonDown(0) && Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity)){
-			//if(hit.transform.parent == transform.parent){
-				//selected = true;
-			//}
 		
-		if(selected && Input.GetMouseButtonDown(0)){
-			if(Physics.Raycast(ray, out hit, Mathf.Infinity)){
-				currentTarget = hit.transform;
-			}
-			if (hit.transform.tag == "Ground"){
-			transform.position = hit.point + new Vector3(0, 0.1f, 0);
-			menu = Instantiate(menuPrefab, hit.point + (hit.normal * 0.01f), Quaternion.LookRotation(hit.normal + new Vector3(-90,0,0))) as GameObject;
-			}}
+		if(Input.GetMouseButtonUp(1) && selected){
+			selected = false;
 		}
-		
-
-
-	 void Target(){
-
-		// This is an escape to return the current target if no raycast can be found, without this an error occurs.
 	}
-
+	
+	
+	void OnGUI(){
+		GUI.Label(new Rect(10,10, 200, 30), raycastHitName);
+	}
 }
