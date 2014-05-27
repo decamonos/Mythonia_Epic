@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SquadController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GeneralController.cs">
     <Files>
-      <File FileName="Assets\Scripts\SquadController.cs" Line="60" Column="15" />
+      <File FileName="Assets\Scripts\GeneralController.cs" Line="49" Column="3" />
+      <File FileName="Assets\Scripts\SquadController.cs" Line="34" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
