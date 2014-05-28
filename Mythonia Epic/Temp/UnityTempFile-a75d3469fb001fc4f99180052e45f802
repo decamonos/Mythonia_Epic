@@ -1,0 +1,142 @@
+-debug
+-target:library
+-nowarn:0169
+-out:Temp/Assembly-CSharp-Editor.dll
+-r:"C:/Program Files (x86)/Unity4Pro/Editor/Data/Managed/UnityEngine.dll"
+-r:"C:/Program Files (x86)/Unity4Pro/Editor/Data/Managed/UnityEditor.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp.dll
+-r:Assets/6by7/ProBuilder/Classes/ProBuilderCore.dll
+-r:Assets/6by7/ProBuilder/Editor/ProBuilderEditor.dll
+-r:Assets/6by7/Shared/Code/SixBySeven.dll
+-r:"Assets/Daikon Forge/Daikon Forge/DataBinding/Plugins/dfScriptLite.dll"
+-r:"C:/Program Files (x86)/Unity4Pro/Editor/Data/Managed/UnityEditor.Graphs.dll"
+-r:"C:/Program Files (x86)/Unity4Pro/Editor/Data/PlaybackEngines/iPhonePlayer/EditorExtensions/UnityEditor.iOS.Extensions.dll"
+-r:"C:/Program Files (x86)/Unity4Pro/Editor/Data/PlaybackEngines/WP8Support/EditorExtensions/UnityEditor.WP8.Extensions.dll"
+-r:"C:/Program Files (x86)/Unity4Pro/Editor/Data/PlaybackEngines/MetroSupport/EditorExtensions/UnityEditor.Metro.Extensions.dll"
+-r:"C:/Program Files (x86)/Unity4Pro/Editor/Data/PlaybackEngines/BB10Player/EditorExtensions/UnityEditor.BB10.Extensions.dll"
+-r:"C:/Program Files (x86)/Unity4Pro/Editor/Data/PlaybackEngines/AndroidPlayer/EditorExtensions/UnityEditor.Android.Extensions.dll"
+-r:"C:\Program Files (x86)\Unity4Pro\Editor\Data\PackageManager\Unity\PackageManager\4.3.2\Unity.PackageManager.dll"
+-define:UNITY_STANDALONE_WIN
+-define:ENABLE_MICROPHONE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_AUDIO_FMOD
+-define:UNITY_STANDALONE
+-define:ENABLE_MONO
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_GENERICS
+-define:ENABLE_SUBSTANCE
+-define:INCLUDE_WP8SUPPORT
+-define:ENABLE_MOVIES
+-define:ENABLE_WWW
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_WEBCAM
+-define:INCLUDE_METROSUPPORT
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_NETWORK
+-define:ENABLE_PHYSICS
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_2D_PHYSICS
+-define:ENABLE_SHADOWS
+-define:ENABLE_AUDIO
+-define:ENABLE_NAVMESH_CARVING
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:UNITY_4_3_2
+-define:UNITY_4_3
+-define:ENABLE_PROFILER
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_WIN
+-define:UNITY_TEAM_LICENSE
+Assets/6by7/ProBuilder/Editor/Actions/Bridge.cs
+Assets/6by7/ProBuilder/Editor/Actions/DetachFace.cs
+Assets/6by7/ProBuilder/Editor/Actions/ExplodeFaces.cs
+Assets/6by7/ProBuilder/Editor/Actions/ExportObj.cs
+Assets/6by7/ProBuilder/Editor/Actions/ExtrudeFace.cs
+Assets/6by7/ProBuilder/Editor/Actions/FlipFaces.cs
+Assets/6by7/ProBuilder/Editor/Actions/InvertSelection.cs
+Assets/6by7/ProBuilder/Editor/Actions/Merge.cs
+Assets/6by7/ProBuilder/Editor/Actions/PivotTool.cs
+Assets/6by7/ProBuilder/Editor/Actions/ProBuilderizeGameObject.cs
+Assets/6by7/ProBuilder/Editor/Actions/StripProBuilderScripts.cs
+Assets/6by7/ProBuilder/Editor/ProBuilderMenuItems.cs
+Assets/6by7/ProBuilder/Editor/Repair/CleanUpLeakedMeshes.cs
+Assets/6by7/ProBuilder/Editor/Repair/FixGameObjectFlags.cs
+Assets/6by7/ProBuilder/Editor/Repair/ForceMeshRefresh.cs
+Assets/6by7/ProBuilder/Editor/Repair/RebuildSharedIndices.cs
+Assets/6by7/ProBuilder/Editor/Repair/SetProjectionAxis.cs
+Assets/6by7/ProBuilder/Editor/Tools/AutoNodraw.cs
+Assets/6by7/ProBuilder/Editor/Tools/ProjectNodrawUtil.cs
+Assets/6by7/ProBuilder/Editor/Tools/SelectFacesWithMaterial.cs
+Assets/6by7/ProBuilder/Editor/pb_About.cs
+Assets/6by7/ProBuilder/Editor/pb_Preferences.cs
+Assets/6by7/ProBuilder/Editor/pb_Upgrade_Utility.cs
+Assets/6by7/ProBuilder/Install/Editor/QuickStart.cs
+Assets/6by7/ProGrids/Editor/pg_Constant.cs
+Assets/6by7/ProGrids/Editor/pg_Editor.cs
+Assets/6by7/ProGrids/Editor/pg_Preferences.cs
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfAnimationClipInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfButtonInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfCheckboxInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfControlInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfDesignGuideEditor.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfDragHandleInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfDropdownListInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfDynamicFontInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfEditorUtil.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfFontDefinitionInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfGUIManagerInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfGUIWizard.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfLabelInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfListboxInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfMaterialEditor.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfPanelFlowLayoutInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfPanelInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfPrefabSelectionDialog.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfProgressbarInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfRadialSpriteInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfResizeHandleInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfRichTextLabelInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfScriptWizard.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfScrollPanelInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfScrollbarInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfSlicedSpriteInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfSliderInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfSpriteInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfSpriteSelectionDialog.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfTabPageContainerInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfTabstripInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfTextboxInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfTextureAtlasInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfTexturePacker.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfTexturePackerImporter.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfTextureSpriteInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfTiledSpriteInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfWebSpriteInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DFGUI/Editor/dfWelcomeDialog.cs"
+"Assets/Daikon Forge/Daikon Forge/DataBinding/Editor/EventBindingEditor.cs"
+"Assets/Daikon Forge/Daikon Forge/DataBinding/Editor/KeyBindingEditor.cs"
+"Assets/Daikon Forge/Daikon Forge/DataBinding/Editor/PropertyBindingEditor.cs"
+"Assets/Daikon Forge/Daikon Forge/DataBinding/Editor/ProxyPropertyBindingEditor.cs"
+"Assets/Daikon Forge/Daikon Forge/DataBinding/Editor/dfDataObjectProxyInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DataBinding/Editor/dfEventDrivenPropertyBindingInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DataBinding/Editor/dfExpressionBindingInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DataBinding/Editor/dfExpressionEditorWindow.cs"
+"Assets/Daikon Forge/Daikon Forge/DataBinding/Editor/dfSpriteAnimationInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/DataBinding/Editor/dfTextEditorWindow.cs"
+"Assets/Daikon Forge/Daikon Forge/Editor/dfUpgradeHelper.cs"
+"Assets/Daikon Forge/Daikon Forge/Examples/ActionBar/Editor/SpellInventoryInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/Examples/ActionBar/Editor/SpellSlotInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/Tweening/Editor/TweenColor32Inspector.cs"
+"Assets/Daikon Forge/Daikon Forge/Tweening/Editor/TweenColorInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/Tweening/Editor/TweenEventBindingInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/Tweening/Editor/TweenFloatInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/Tweening/Editor/TweenGroupInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/Tweening/Editor/TweenInspectorBase.cs"
+"Assets/Daikon Forge/Daikon Forge/Tweening/Editor/TweenRotationInspector.cs"
+"Assets/Daikon Forge/Daikon Forge/Tweening/Editor/TweenVector2Inspector.cs"
+"Assets/Daikon Forge/Daikon Forge/Tweening/Editor/TweenVector3Inspector.cs"
+"Assets/Daikon Forge/Daikon Forge/Tweening/Editor/TweenVector4Inspector.cs"
+-r:"C:/Program Files (x86)/Unity4Pro/Editor/Data/Mono\lib/mono/2.0\System.Runtime.Serialization.dll"
+-r:"C:/Program Files (x86)/Unity4Pro/Editor/Data/Mono\lib/mono/2.0\System.Xml.Linq.dll"
