@@ -12,6 +12,9 @@ public class MainMenu : MonoBehaviour {
 	
 	private Rect[] resolutions = new Rect[10];
 	private int resolutionSelection = 0;
+
+	public AudioClip confirm;
+	public AudioClip back;
 	
 	// Use this for initialization
 	
@@ -52,13 +55,17 @@ public class MainMenu : MonoBehaviour {
 		if(!isOptions){
 			if(GUI.Button(new Rect(Screen.width / 2 - 200, 300, 400, 100), "Play Game")){
 				AutoFade.LoadLevel("testing", 0.5f, 0.5f, Color.black);
+				audio.PlayOneShot(confirm);
 			}if(GUI.Button(new Rect(Screen.width / 2 - 200, 375, 400, 100), "Options")){
 				isOptions = true;
+				audio.PlayOneShot(confirm);
 			}if(GUI.Button(new Rect(Screen.width / 2 - 200, 450, 400, 100), "Exit")){
+				audio.PlayOneShot(back);
 				Application.Quit();
 			}
 		}else{
 			if(GUI.Button(new Rect(Screen.width / 2 - 200, 580, 400, 50), "Back")){
+				audio.PlayOneShot(back);
 				isOptions = false;
 			}
 			
@@ -68,8 +75,10 @@ public class MainMenu : MonoBehaviour {
 			GUI.Box(new Rect(Screen.width / 2 - 135, 360, 270, 50), "");
 			
 			if(GUI.Button(new Rect(Screen.width / 2 - 190, 360, 60, 60), "<") && resolutionSelection - 1 >= 0){
+				audio.PlayOneShot(confirm);
 				resolutionSelection--;
 			}if(GUI.Button(new Rect(Screen.width / 2 + 130, 360, 60, 60), ">") && resolutionSelection + 1 <= resolutions.Length - 1){
+				audio.PlayOneShot(confirm);
 				resolutionSelection++;
 			}
 			
@@ -88,8 +97,10 @@ public class MainMenu : MonoBehaviour {
 			
 			if(GUI.Button(new Rect(Screen.width / 2 - 190, 460, 60, 60), "<")){
 				fullscreen = !fullscreen;
+				audio.PlayOneShot(confirm);
 			}if(GUI.Button(new Rect(Screen.width / 2 + 130, 460, 60, 60), ">")){
 				fullscreen = !fullscreen;
+				audio.PlayOneShot(confirm);
 			}
 			
 			//Fullscreen Logic
@@ -110,6 +121,7 @@ public class MainMenu : MonoBehaviour {
 			
 			if(GUI.Button(new Rect(Screen.width / 2 - 200, 540, 400, 50), "Apply")){
 				Screen.SetResolution((int)resolutions[resolutionSelection].width, (int)resolutions[resolutionSelection].height, fullscreen);
+				audio.PlayOneShot(confirm);
 			}
 		
 		}

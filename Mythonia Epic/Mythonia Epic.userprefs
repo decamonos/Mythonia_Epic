@@ -1,11 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GeneralController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UnitController.cs">
     <Files>
-      <File FileName="Assets\Scripts\GeneralController.cs" Line="50" Column="37" />
-      <File FileName="Assets\Scripts\SquadController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UnitController.cs" Line="20" Column="2" />
+      <File FileName="Assets\Scripts\SquadController.cs" Line="110" Column="5" />
       <File FileName="Assets\Scripts\ChampionController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\UnitController.cs" Line="26" Column="64" />
+      <File FileName="Assets\Scripts\GeneralController.cs" Line="47" Column="32" />
+      <File FileName="Assets\Scripts\Main Menu\MainMenu.cs" Line="116" Column="4" />
+      <File FileName="Assets\Scripts\Attack.cs" Line="24" Column="5" />
+      <File FileName="Assets\Scripts\MeleeAttack.cs" Line="16" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

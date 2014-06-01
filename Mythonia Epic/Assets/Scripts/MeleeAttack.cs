@@ -12,8 +12,8 @@ public class MeleeAttack : Attack {
 
 	// Use this for initialization
 	void Start () {
-		_thisUnit = transform;
-		ray.origin = _thisUnit.position;
+		//_thisUnit = transform;
+		//ray.origin = _thisUnit.position;
 	}
 	
 	// Update is called once per frame

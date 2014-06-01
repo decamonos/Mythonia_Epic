@@ -118,7 +118,7 @@ public class GeneralController : MonoBehaviour {
 			if (modifier == 3){
 			}
 		}
-		if (skillNumber == 4){
+		if (skillNumber == 3){
 		}
 	}
 
